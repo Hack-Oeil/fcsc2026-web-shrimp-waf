@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head lang="th">
+    <meta charset="UTF-8">
+    <!--Page Title-->
+    <title>Hack-Oeil - CTF ของ Cyrhades</title>
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" title="Favicon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="./assets/js/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Vérifie si la fenêtre est dans une iframe
+            if (window.self !== window.top) {
+                document.querySelectorAll('a').forEach((link) => {
+                    link.addEventListener('click', (event) => {
+                        const a = event.target.closest('a[href^="http"]');
+                        if (a) {
+                            event.preventDefault();
+                            window.parent.postMessage({
+                                type: "open-external",
+                                url: a.href
+                            }, "*");
+                        }
+                    });
+                });
+            }
+            // Active la coloration syntaxique :
+            if (window.hljs) {
+                hljs.highlightAll();
+            } else {
+                console.error("Highlight.js non chargé !");
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!--Main Content Area-->
+        <main id="content">
+            <!--Ctf-->
+            <section class="ctf scrollto">
+                <article class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>ความท้าทาย #606</h3>
+                            <h2 class="section-title">Shrimp WAF</h2>
+                            <p>
+กุ้งตัวนี้เก็บความลับที่ต้องกู้คืนมาให้ได้อย่างแน่นอน
+                            </p>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>FCSC 2025</h3>
+                            <h2 class="section-title">Hackropole</h2>
+                            <p class="section-subtitle">
+                                ลิงก์ทางการ:
+                                <a target="_blank" href="https://hackropole.fr/fr/challenges/web/fcsc2026-web-shrimp-waf/">https://hackropole.fr/fr/challenges/web/fcsc2026-web-shrimp-waf/</a>
+                                <br />
+                                ผู้เขียน: Worty
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>การเรียนรู้</h3>
+                            <h2 class="section-title">เอกสารและวิดีโอ</h2>
+                            <p class="section-subtitle">
+                                ยังไม่มีเอกสารในขณะนี้
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>ความช่วยเหลือ</h3>
+                            <h2 class="section-title">คำแนะนำและคำใบ้</h2>
+                            <p class="section-subtitle">
+                                <a target="_blank"
+                                    href="https://discord.com/channels/1175764392307077120/1175764601716092948">เธรดบน Discord</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!--End of Ctf-->
+        </main>
+        <!--End Main Content Area-->
+
+        <a id="scrollUp" href="#wrapper" style="position: fixed; z-index: 1000;"
+            aria-label="กลับไปด้านบน" title="กลับไปด้านบนสุดของเว็บไซต์"></a>
+    </div>
+</body>
+
+</html>
