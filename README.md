@@ -1,4 +1,4 @@
-# FCSC 2025 Shrimp WAF
+# FCSC 2026 Shrimp WAF
 
 La shrimp garde un secret qu’il faut absolument récupérer.
 
